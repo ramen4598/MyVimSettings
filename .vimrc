@@ -1,4 +1,4 @@
-"tired_i vimrc file (ver.22.04.09)
+"tired_i vimrc file (ver.22.04.12)
 
 set nocompatible              " Vi와 호환 불가 설정, 필수
 filetype off                  " 필수
@@ -30,6 +30,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'preservim/nerdtree'
 
 "vim-fugitive
+"창에서 git add, commit 같은 기능을 수행할 수 있음.
 Plugin 'tpope/vim-fugitive'
 
 "gitgutter
@@ -102,7 +103,12 @@ set paste! "붙여넣기 계단현상 없애기
 
 set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
 
+"찾기에서 대소문자 구별하지 않음
+set ignorecase    
 
 "colorscheme
 colorscheme jellybeans
 
+"vim-indent-guides-default on.
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 1
