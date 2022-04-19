@@ -66,6 +66,7 @@ set autowrite "다른 파일로 넘어갈 때 자동 저장
 
 set autoindent "자동 들여쓰기
 set smartindent
+set cindent
 
 " Always show current position
 " 오른편 하단에 현재 위치의 (행, 렬)을 표시
