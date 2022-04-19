@@ -58,6 +58,10 @@ filetype plugin indent on    " 필수
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" syntax highlight
+" 언어 syntax에 하이라이트표시
+syntax on
+
 " Set to auto read when a file is changed from the outside
 " 현재 사용하고 있는 파일이 외부에서 수정된 경우 자동으로 읽기
 set autoread
@@ -75,6 +79,7 @@ set ruler
 " Highlight search results
 " 검색결과에 하이라이트 표시하기
 set hlsearch
+set ic "대소문자 무시한 검색
 
 " Show matching brackets when text indicator is over them
 " 현재 커서가 놓여진 괄호의 짝을 표시하기
@@ -84,9 +89,6 @@ set showmatch
 " 라인넘버 표시하기
 set number
 
-" syntax highlight
-" 언어 syntax에 하이라이트표시
-syntax on
 
 " Set utf8 as standard encoding
 " utf8을 표준 인코딩으로 사용하기
